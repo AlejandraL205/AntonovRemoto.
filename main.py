@@ -6,21 +6,13 @@ Created on Fri Apr 17 09:44:23 2020
 """
 
 import numpy as np
+a = np. array ([[-2, -6], [-4,3],[5,0],[4,-6]])
+x=np.array([[2,-2,2],[-2,0,-3]])
 
-nombres = ['Jose', 'Diego', 'Ricky', 'Jacinto', 'David', 'Alvaro', 'Ricky']
-
-#ordenar lista
-def nombres(nombres):
-    nombres.sort() 
-    print (nombres)
-    
-    return
-#invertir orden
-def nombresInvertir (nombres):
-     nombres.reverse()
-     print (nombres[2])
-     
-#oreden descendente
-def nombresD (nombres):   
-    nombresD.sort(reverse=True) 
-    print (nombresD)
+print (a.dot(x))
+#ordenar a
+print ("a ordenado= ", np.sort(a))
+#longitud
+print ("longitud= " ,a.size)
+#convertir a lista
+print("lista = ", a.tolist())
